@@ -13,10 +13,13 @@ python3 scripts/colmap2nerf.py \
   --run_colmap \
   --aabb_scale 32
 
-Kimenet
+## Kimenet
 
 A folyamat eredményeként létrejön egy transforms.json fájl, amely tartalmazza:
 
 a kamera pozíciókat
 a képek elérési útját
 a szükséges metaadatokat
+
+## Megjegyzés
+Az aabb_scale paraméter különösen fontos szerepet játszik a jelenet méretének kezelésében. A dolgozat során több érték is kipróbálásra került (pl. 16 és 32), és megfigyelhető volt, hogy nagyobb terek esetén a magasabb érték stabilabb eredményt adott.
